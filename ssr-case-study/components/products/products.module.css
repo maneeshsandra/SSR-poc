@@ -1,0 +1,112 @@
+.productPage {
+    display: flex;
+    flex-direction: row;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   
+    margin-top: 1vh;
+    margin-left:1vw;
+    margin-right: 5vw;
+  }
+  .sidenav {
+    background-color: rgb(197, 196, 196);
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    margin-top: 105px;
+  }
+  .categoryButton {
+    margin-top: 5px;
+    border: none;
+    background-color: rgb(197, 196, 196);
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .active,
+  .categoryButton:hover {
+    background-color: rgb(149, 134, 134);
+  }
+  
+  @media (max-width: 820px) {
+    .cards {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin-top: 105px;
+      /* margin-left: 250px; */
+    }
+    .sidenav {
+      background-color: rgb(197, 196, 196);
+      width: auto;
+      height: 100vh;
+      position: fixed;
+      margin-top: 105px;
+    }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 375px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+      /* margin-top: 105px;
+      margin-left: 130px; */
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      width: 700px;
+    }
+    .sidenav {
+      background-color: rgb(197, 196, 196);
+      width: auto;
+      height: 100vh;
+      position: fixed;
+      margin-top: 105px;
+    }
+  }
+
+  .productcategory {
+    display: flex;
+    box-shadow: 0 4px 6px 0 rgb(208, 209, 211);
+    padding: 20px 30px 40px;
+    margin: 10px;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+  }
+  .productimageClass img {
+    height: 150px;
+    width: 150px;
+    flex: 1;
+  }
+  .productcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .productheading {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .productdescription {
+    font-size: large;
+    margin: 10px;
+    text-align: center;
+  }
+  .productexploreButton {
+    background-color: #d62a63;
+    color: white;
+    /* border: none; */
+    cursor: pointer;
+  }
+  .productexploreButton:hover {
+    background-color: rgb(116, 24, 24);
+  }
+  .productpriceCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  

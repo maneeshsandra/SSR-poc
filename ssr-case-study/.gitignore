@@ -1,0 +1,22 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+package-lock.json
+
+#testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+#production
+/build
+
+# msc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
